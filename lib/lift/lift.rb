@@ -1,11 +1,7 @@
 module TheLift
   class Lift
-    # initialise going up
-    # maximum capacity -> maximum people allowed in the lift
-    # people count -> people in the lift
-    # lift should know current floor
-    # knows if it's going up or down
-    attr_reader :max_capacity, :current_floor, :floor_history, :people_count
+    attr_reader :max_capacity, :current_floor, :floor_history
+    attr_accessor :people_count
 
     def initialize(max_capacity:)
       @max_capacity = max_capacity
